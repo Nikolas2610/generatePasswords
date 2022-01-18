@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #141526;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+#title {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.formPasswords {
+    width: auto;
+    height: 640px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.formPasswords .row{
+    margin: 10px auto;
+    border: 2px solid #0088a9;
+    border-radius: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 950px;
+    padding: 10px;
+}
+
+.formPasswords .symbols {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 20px 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    width: 55%;
+    background-color: #205839a6;
+    border: 2px solid #205839a6;
+    padding: 4px 0px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.btn button {
+    background-color: transparent;
+    border: none;
+    border: 3px solid #0088a9;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    margin-right: 30px;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    color: #0088a9;
+}
+
+#answer{
+    text-align: center;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+#answer #password {
+    color: lawngreen!important;
+}
+
+.passwordsResults {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 25px;
+    visibility: hidden;
+    justify-content: center;
+}
+
+.textLabel {
+    padding-left: 40px;
+}
+
+.rowSymbol {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 3px;
+}
+

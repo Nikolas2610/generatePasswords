@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Passwords</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Generate Passwords</h1>
+    <div class="formPasswords">
+        <form>
+            <div class="row">
+                <label for="firstName" class="textLabel">First Name:</label>
+                <input type="text" id="firstName" class="inputLabel" placeholder="e.g. James">
+            </div>
+            <div class="row">
+                <label for="lastName" class="textLabel">Last Name:</label>
+                <input type="text" id="lastName" class="inputLabel" placeholder="e.g. Bond">
+            </div>
+            <div class="row">
+                <label for="dayBirth" class="textLabel">Day of Birthday (Number): </label>
+                <input type="text" id="dayBirth" class="inputLabel" placeholder="e.g. 10">
+            </div>
+            <div class="row">
+                <label for="monthBirth" class="textLabel">Month of Birthday (Number): </label>
+                <input type="text" id="monthBirth" class="inputLabel"  placeholder="e.g. 9">
+            </div>
+            <div class="row">
+                <label for="yearBirth" class="textLabel">Year of Birthday (Number): </label>
+                <input type="text" id="yearBirth" class="inputLabel" placeholder="e.g. 1999">
+            </div>
+            <div class="row">
+                <label for="passwordLength" class="textLabel">Password lenght: </label>
+                <input type="text" id="passwordLength" class="inputLabel"  placeholder="e.g. 8">
+            </div>
+            <div class="symbols">
+                <div class="rowSymbol">
+                    <input type="checkbox" id="thaumastiko" value="!">
+                    <label for="thaumastiko">( ! )</label class="test2">
+                </div>
+                <div class="rowSymbol">
+                    <input type="checkbox" id="kathetos" value="/">
+                    <label for="kathetos">( / )</label>
+                </div>
+                <div class="rowSymbol">
+                    <input type="checkbox" id="paula" value="-">
+                    <label for="paula">( - )</label>
+                </div>
+                <div class="rowSymbol">
+                    <input type="checkbox" id="katoPaula" value="_">
+                    <label for="katoPaula">( _ )</label>
+                </div>
+                <div class="rowSymbol">         
+                    <input type="checkbox" id="erotimatiko" value="?">
+                    <label for="katoPaula">( ? )</label>
+                </div>
+                <div class="rowSymbol">
+                    <input type="checkbox" id="dolario" value="$">
+                    <label for="katoPaula">( $ )</label>
+                </div>
+                <div class="rowSymbol">
+                    <input type="checkbox" id="ramdom" checked>
+                    <p>Random</p>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+    <div class="btn">
+        <button id="generatePasswords">Generate Password</button>
+        <button id="copy" onclick="copyTextFromElement()">Copy Password</button>
+    </div>
+
+    <div class="passwordsResults" id="results">
+        <div id="answer">Password: </div><span id="password"></span>
+    </div>
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="js/function.js"></script>
+</body>
+
+</html>
